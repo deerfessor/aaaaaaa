@@ -1,3 +1,4 @@
+import { Button } from "../components/Button";
 
 
 export const Registration = () => {
@@ -6,9 +7,19 @@ export const Registration = () => {
         alert(`${username} - это вы`)
     }
   return (
-    <form action={savename}>
-        <input type="text" name="username"/>
+    <div className="flex justify-between flex-wrap">
+      <form action={savename}>
+        <input type="text" name="username" className="bg-black border-1"/>
         <button type='submit'>Save my name</button>
     </form>
+        <Button
+        color="primary"
+        size="small"
+        title="Увеличить счётчик" onClick={function (): void {
+          throw new Error("Function not implemented.");
+        } } disabled={false}        ></Button>
+
+    </div>
+    
   )
 }
