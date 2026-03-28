@@ -16,7 +16,6 @@ export const Button = (props: ButtonProps) => {
   const { size, color, title, onClick, disabled } = props;
   const defaultClass =
     "flex items-center rounded-2 h-[40px] w-[max-content] px-4 py-2 cursor-pointer";
-
   const classes = {
     colors: {
       primary: {
